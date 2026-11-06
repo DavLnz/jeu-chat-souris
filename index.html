@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<title>Le Chat et la Souris</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div id="menu" class="overlay">
+  <h1>🐱 Le Chat et la Souris 🐭</h1>
+  <p>Attrape le plus de souris possible en 60 secondes !<br>
+  Glisse ton doigt sur l'écran (ou utilise les flèches du clavier).</p>
+  <button id="btnJouer">▶ Jouer</button>
+</div>
+
+<div id="gameover" class="overlay hidden">
+  <h1>⏰ Temps écoulé !</h1>
+  <p id="scoreFinal"></p>
+  <p id="recordFinal"></p>
+  <button id="btnRejouer">🔁 Rejouer</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
